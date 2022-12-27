@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Register Form </title>
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+       
+       
+ <div class="box">
+ <form id="form" >
+<h1>Registration</h1>
+ <div class="input">
+ <div class="input-user">
+<div id="">
+
+
+    
+
+</div>
+<form action="results.html" method="get">   
+<label for ="fname"> Firstname</label><br>
+<input id="firstname" name="fname" type="text"> 
+<br>
+<br>
+<div class="input-user">
+<label for ="lname"> Lastname</label><br>
+<input id="lastname" name="lname" type="text">
+<div class="error">
+</div>
+</form>
+
+
+
+
+</div>
+<br>
+<div class="input-user">
+    <label for = "email"> Email </label> <br>
+    <input id="email" name="mail id" type="mail">
+    <div class="error">
+
+</div>
+<br>
+<div class="input-user">
+    <label for = "password"> Password </label> <br>
+    <input id="password" name="password" type="password">
+    <div class="error"> 
+        <br>
+ <input type="checkbox" onclick="myFunction()">Show Password <br>
+       
+
+
+</div>
+<br>
+<class class="input-user">
+    <label for = "password"> confirm password </label><br>
+    <input id="cpassword" name="cpassword" type="cpassword">
+    <div class="error"> 
+        <br>
+ <input type="checkbox" onclick="myWow()">Show  Confirm Password <br>
+
+</div>
+
+
+<button type="submit" value="new login" class="btn"
+ onclick="redirect()"> submit</button>
+
+ <a href="results.html"> second page</a>
+
+<br>
+
+<div class ="loginbtn">
+
+    <a href="login.html" class="login">  Login </a>
+</div>
+
+</div>
+
+
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const firstname = urlParams.get('firstname');
+    console.log(firstname);  
+  </script>
+
+                </div>
+            </form>
+        </div>
+
+
+
+<script>
+function getTxt()
+{
+    
+var textvalues= document.getElementById("firstname").value;
+localStorage.setItem("passValue",textvalues);
+
+
+}
+
+
+</script>
+
+
+        <script src="index.js"> </script>
+    </body>
+</html>

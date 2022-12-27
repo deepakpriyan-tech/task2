@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Register Form </title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+       
+       
+ <div class="box">
+ <form id="form" >
+<h1>Login</h1>
+ <div class="input">
+ <div class="input-user">
+
+
+
+
+
+
+
+</div>
+<br>
+<div class="input-user">
+    <label for = "email"> Email </label> <br>
+    <input id="email" name="mail id" type="mail">
+    <div class="error">
+
+</div>
+<br>
+<div class="input-user">
+    <label for = "password"> Password </label> <br>
+    <input id="password" name="password" type="password">
+    <div class="error"> 
+        <br>
+ <input type="checkbox" onclick="myFunction()">Show Password <br>
+       
+
+
+</div>
+<br>
+
+
+
+<button type="submit" value="new login" class="btn" onclick=""> submit</button>
+
+
+
+<div class ="loginbtn">
+
+    <a href="register.html" class="login">  Not Yet Register ? </a>
+</div>
+
+
+
+</div>
+
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+        <script> 
+        
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+              x.type = "text";
+            } else {
+              x.type = "password";
+            }
+          }
+          </script>
+    </body>
+</html>
